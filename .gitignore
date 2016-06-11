@@ -1,0 +1,16 @@
+/vendor
+/node_modules
+/tests/_output
+/tests/_support/_generated
+/tests/api/ApiTester.php
+/tests/functional/FunctionalTester.php
+/tests/unit/UnitTester.php
+/storage/*.sqlite
+/tags
+.env
+.idea
+.vagrant
+composer.lock
+.key_generated
+.cache
+.composer
