@@ -13,6 +13,8 @@ if [ ! -f ~/.key_generated ]; then
   touch ~/.key_generated;
 fi;
 
-if [ "$DB_DATABASE" != ""]; then
+if [ -z ${DB_DATABASE+x} ]; then
+  echo "DB_DATABASE not set, skipping migration";
+else
   php artisan migrate;
-fi;
+fi
