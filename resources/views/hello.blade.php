@@ -2,7 +2,7 @@
 
 @section('main')
     <h1>Hello world!</h1>
-    
+    <h2>Neue Version</h2>
     @if (count($errors) > 0)
     <div class="alert alert-danger">
         <ul>
